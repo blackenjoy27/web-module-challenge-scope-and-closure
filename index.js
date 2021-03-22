@@ -153,11 +153,11 @@ function scoreboard(fn1,fn2,num) {
   let away = 0;
   let home = 0;
   let score = [];
-  for(let i= 0;i<num;i++){
+  for(let i =0;i<num;i++){
     const temp = fn1(fn2);
     away += temp.Away;
     home +=temp.Home;
-    const str = `Inning ${i}: Away ${away} - Home ${home}`;
+    const str = `Inning ${i+1}: Away ${away} - Home ${home}`;
     score.push(str);
   }
   if(away!==home){
@@ -168,6 +168,8 @@ function scoreboard(fn1,fn2,num) {
   return score;
   /* CODE HERE */
 }
+
+
 
 
 
