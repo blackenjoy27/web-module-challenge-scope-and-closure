@@ -43,6 +43,10 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+  closure allow a return function to have the access to variabls from the excution context that returns it.
+
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,8 +68,23 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+  closure is used in console.log() part where it try to have the reference of parameter from a function that already
+    finish running.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+  The name is always the same, the dice number roll out can change.
+
 c. What is the lexical scope of `newRoll`? 
+
+  <!-- {
+      // generate random number between 1 and 6
+    const newRoll = Math.floor(Math.random() * 6);
+    console.log(`${name} rolled a ${newRoll}`)
+  } -->
+
+
 
 
 ### Task 3 - Stretch Goals
